@@ -1,0 +1,25 @@
+/* Photo-led treatments for selected Avo preview assets. */
+.intro-art:before{display:none}
+.intro-art>img{z-index:0}
+.intro-art-shade{z-index:1}
+.intro-art-word{z-index:2}
+.art-index{z-index:2}
+.work-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.work-art:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#1715189c);pointer-events:none}
+.work-image-caption{position:absolute;z-index:2;left:13px;bottom:11px;font-size:6px;letter-spacing:.13em;color:#fff}
+.work-art-one img{object-position:center 70%}
+.work-art-two img{object-position:center 48%}
+.work-art-three img{object-position:center 61%}
+.team-composition{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:18px 18px 35px;background:#f0ece7}
+.team-composition figure{margin:0;position:relative;overflow:hidden;background:#ded9d4}
+.team-composition figure img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 26%;filter:saturate(.78)}
+.team-composition figure:first-child img{object-position:center 22%}
+.team-composition figure:after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#17151859)}
+.team-composition figcaption{position:absolute;z-index:1;left:8px;bottom:8px;color:#fff;font-size:5px;letter-spacing:.12em}
+.team-composition .team-caption{position:absolute;left:18px;bottom:11px;font-size:6px;letter-spacing:.14em;color:#706a6a}
+.about-cover>img{position:absolute;inset:0;z-index:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 44%;filter:brightness(.58)}
+.about-cover:before{z-index:1;opacity:.2}
+.about-cover-shade{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#1714169c,transparent 77%)}
+.about-cover-mark{z-index:2}
+.cover-detail,.cover-vertical{z-index:2}
+@media(max-width:650px){.team-composition{height:210px;padding:12px 12px 29px;gap:7px}.team-composition .team-caption{left:12px;bottom:9px;font-size:5px}.work-image-caption{left:8px;bottom:7px;font-size:5px}}
